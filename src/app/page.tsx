@@ -1,7 +1,9 @@
 import React from 'react';
 import StatusLabel, { Status } from './components/status-label';
+import { headers } from 'next/headers';
 
 export default function Home() {
+ 
   return (
     <main>
       <h1 className="text-xl">Home Page</h1>

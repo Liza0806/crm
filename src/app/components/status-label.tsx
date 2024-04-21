@@ -13,6 +13,8 @@ export interface StatusLabelProps {
     disabled?: boolean;
 }
 export default function ActiveLabel({children, status, disabled}: StatusLabelProps ) {
+
+    console.log(process.env.CRM_SECRET_KEY)
     return <span className={clsx('inline-flex items-center py-1 px-3.5 rounded-3xl text-sn font-medium',
     status === Status.Active && 'text-green-700 bg-green-100 ',
     status === Status.NotActive && 'text-red-700 bg-red-100 ',
